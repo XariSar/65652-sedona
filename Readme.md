@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Румак](https://up.htmlacademy.ru/htmlcss/14/user/65652).
-* Наставник: [Леонид Лебедев](https://htmlacademy.ru/profile/id67135).
+* Наставник: [Леонид "Сенсей" Лебедев](https://htmlacademy.ru/profile/id67135).
 
 ---
 
