@@ -1,12 +1,202 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+</head>
 
-  </body>
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="#">информация</a></li>
+          <li><a href="#">фото и видео</a></li>
+          <li><a href="#">карта штата</a></li>
+          <li><a href="#">гостиницы</a></li>
+        </ul>
+      </nav>
+      <img src="#" alt="#" class="head-logo">
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="logo-block">
+      <figure class="logo-welcom">
+        <img src="#" alt="Добро пожаловать!" class="">
+      </figure>
+      <b class="logo-name"></b>
+      <figure class="logo-motto">
+        <img src="#" alt="наш девиз" class="">
+      </figure>
+    </section>
+
+    <section class="intro">
+      <p class="intro-represent">
+        седона - небольшой городок в аризоне, заслуживающий юольшего!
+      </p>
+      <p class="intro-ad">
+        рассмотрим 5 причин, по которым седона круче, чем гранд-каньон!
+      </p>
+    </section>
+
+    <section class="features">
+      <div class="features-item">
+        <div class="features-present">
+          <b class="features-name">
+            настоящий городок
+          </b>
+          <p class="features-number">
+            - №1 -
+          </p>
+          <p class="features-description">
+            седона - не атракцион для туристов, там течет своя жизнь
+          </p>
+        </div>
+        <figure class="features-photo">
+          <img src="http://placehold.it/150x100" alt="седона">
+        </figure>
+        <div class="features-explanation">
+          <div class="explanation">
+            <img src="http://placehold.it/150x100" alt="жилье">
+            <b>жилье</b>
+            <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="explanation">
+            <img src="http://placehold.it/150x100" alt="еда">
+            <b>еда</b>
+            <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="explanation">
+            <img src="http://placehold.it/150x100" alt="сувениры">
+            <b>сувениры</b>
+            <p>не только китайского, но и местного производства!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-item">
+        <figure class="features-photo">
+          <img src="http://placehold.it/150x100" alt="седона">
+        </figure>
+        <div class="features-present">
+          <b class="features-name">
+            там есть мост дьявола
+          </b>
+          <p class="features-number">
+            - №2 -
+          </p>
+          <p class="features-description">
+            да, по нему можно пройти! если конечно вы осмелитесь
+          </p>
+        </div>
+      </div>
+
+      <div class="features-item">
+        <div class="features-present">
+          <b class="features-name">
+            небольшая площадь
+          </b>
+          <p class="features-number">
+            - №3 -
+          </p>
+          <p class="features-description">
+            все достопримечательности находятся близко
+          </p>
+        </div>
+      </div>
+
+      <div class="features-item">
+        <div class="features-present">
+          <b class="features-name">
+            красивая дорога
+          </b>
+          <p class="features-number">
+            - №4 -
+          </p>
+          <p class="features-description">
+            ехать в седону из лас-вегаса совсем не скучно!
+          </p>
+        </div>
+      </div>
+
+      <div class="features-item">
+        <div class="features-present">
+          <b class="features-name">
+            мало туристов
+          </b>
+          <p class="features-number">
+            - №5 -
+          </p>
+          <p class="features-description">
+            большинство едет в гранд-каньон и толпится там
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hotel">
+      <div class="hotel-guidance">
+        <h2 class="hotel-title">
+          заинтересовались?
+        </h2>
+        <p class="hotel-description">
+          укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
+      </div>
+
+      <div class="hotel-search">
+        <h2 class="form-title">поиск гостиницы в седоне</h2>
+        <form action="#">
+          <label>дата заезда:
+            <input type="text" value="24 апреля 2016">
+          </label>
+          <label>дата выезда:
+            <input type="text" value="4 июля 2016">
+          </label>
+          <label>взрослые:
+            <input type="text" value="2">
+          </label>
+          <label>дети:
+            <input type="text" value="0">
+          </label>
+        </form>
+        <button type="button" name="map-search">найти</button>
+      </div>
+
+      <figure class="hotel-map">
+        <img src="http://placehold.it/150x100" alt="карта">
+      </figure>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="hash-tag">
+        #visitsedona
+      </div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="https://vk.com/"><img src="#" alt="Twitter"></a>
+          </li>
+          <li>
+            <a href="https://facebook.com/"><img src="http://placehold.it/150x100" alt="Facebook"></a>
+          </li>
+          <li>
+            <a href="https://youtube.com/"><img src="#" alt="Youtube"></a>
+          </li>
+        </ul>
+      </div>
+
+      <figure class="developer-logo">
+        <img src="http://placehold.it/150x100" alt="HTML Academy">
+      </figure>
+    </div>
+  </footer>
+
+</body>
+
 </html>
