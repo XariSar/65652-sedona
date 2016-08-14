@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -27,28 +28,28 @@
 
     <main class="main-content">
       <div class="logo-block">
-        <figure class="logo-welcome">
+        <div class="logo-welcome">
           <img src="#" alt="Добро пожаловать!" class="">
-        </figure>
+        </div>
         <b class="logo-name"></b>
-        <figure class="logo-motto">
+        <div class="logo-motto">
           <img src="#" alt="наш девиз" class="">
-        </figure>
+        </div>
       </div>
 
       <section class="intro">
-        <p class="intro-ad">
+        <div class="intro-ad">
           <h1 class="intro-represent">
          седона - небольшой городок в аризоне,
          заслуживающий юольшего!
        </h1>
           <p class="intro-ad">рассмотрим 5 причин, по которым седона круче, чем гранд-каньон!</p>
-        </p>
+        </div>
       </section>
 
       <section class="features">
-        <div class="features-item">
-          <div class="features-present">
+        <div class="features-item clearfix">
+          <div class="features-present town">
             <b class="features-name">
             настоящий городок
           </b>
@@ -59,33 +60,34 @@
               седона - не аттракцион для туристов, там течет своя жизнь
             </p>
           </div>
-          <figure class="features-photo">
+          <div class="features-photo">
             <img src="img/content-town.jpg" width="800" height="256" alt="городок Седона">
-          </figure>
-          <div class="features-explanation">
-            <div class="explanation">
-              <img src="http://placehold.it/150x100" alt="жилье">
-              <b>жилье</b>
-              <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </div>
-            <div class="explanation">
-              <img src="http://placehold.it/150x100" alt="еда">
-              <b>еда</b>
-              <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </div>
-            <div class="explanation">
-              <img src="http://placehold.it/150x100" alt="сувениры">
-              <b>сувениры</b>
-              <p>не только китайского, но и местного производства!</p>
-            </div>
           </div>
         </div>
 
-        <div class="features-item">
-          <figure class="features-photo">
+        <div class="features-explanation clearfix">
+          <div class="explanation">
+            <img src="http://placehold.it/150x100" alt="жилье">
+            <b>жилье</b>
+            <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="explanation">
+            <img src="http://placehold.it/150x100" alt="еда">
+            <b>еда</b>
+            <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="explanation">
+            <img src="http://placehold.it/150x100" alt="сувениры">
+            <b>сувениры</b>
+            <p>не только китайского, но и местного производства!</p>
+          </div>
+        </div>
+
+        <div class="features-item clearfix">
+          <div class="features-photo">
             <img src="img/content-canyon.jpg" width="800" height="256" alt="Мост дьявола">
-          </figure>
-          <div class="features-present">
+          </div>
+          <div class="features-present canyon">
             <b class="features-name">
             там есть мост дьявола
           </b>
@@ -98,45 +100,48 @@
           </div>
         </div>
 
-        <div class="features-item">
-          <div class="features-present">
-            <b class="features-name">
+        <div class="features-row clearfix">
+          <div class="features-item">
+            <div class="features-present">
+              <b class="features-name">
             небольшая площадь
           </b>
-            <p class="features-number">
-              - №3 -
-            </p>
-            <p class="features-description">
-              все достопримечательности находятся близко
-            </p>
+              <p class="features-number">
+                - №3 -
+              </p>
+              <p class="features-description">
+                все достопримечательности находятся близко
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="features-item">
-          <div class="features-present">
-            <b class="features-name">
+
+          <div class="features-item">
+            <div class="features-present">
+              <b class="features-name">
             красивая дорога
           </b>
-            <p class="features-number">
-              - №4 -
-            </p>
-            <p class="features-description">
-              ехать в седону из лас-вегаса совсем не скучно!
-            </p>
+              <p class="features-number">
+                - №4 -
+              </p>
+              <p class="features-description">
+                ехать в седону из лас-вегаса совсем не скучно!
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="features-item">
-          <div class="features-present">
-            <b class="features-name">
+          <div class="features-item">
+            <div class="features-present">
+              <b class="features-name">
             мало туристов
           </b>
-            <p class="features-number">
-              - №5 -
-            </p>
-            <p class="features-description">
-              большинство едет в гранд-каньон и толпится там
-            </p>
+              <p class="features-number">
+                - №5 -
+              </p>
+              <p class="features-description">
+                большинство едет в гранд-каньон и толпится там
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -175,7 +180,6 @@
             </label>
             <button type="submit" name="map-search">найти</button>
           </form>
-
         </div>
 
         <div class="hotel-map">
@@ -191,22 +195,22 @@
       <div class="social">
         <ul>
           <li>
-            <a href="https://vk.com/"><img src="#" alt="Twitter"></a>
+            <a href="https://vk.com/"></a>
           </li>
           <li>
-            <a href="https://facebook.com/"><img src="http://placehold.it/150x100" alt="Facebook"></a>
+            <a href="https://facebook.com/"></a>
           </li>
           <li>
-            <a href="https://youtube.com/"><img src="#" alt="Youtube"></a>
+            <a href="https://youtube.com/"></a>
           </li>
         </ul>
       </div>
 
       <div class="developer">
         <span>website by</span>
-        <figure class="developer-logo">
+        <div class="developer-logo">
           <img src="http://placehold.it/150x100" alt="HTML Academy">
-        </figure>
+        </div>
       </div>
     </footer>
   </div>

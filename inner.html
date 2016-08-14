@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Отели</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -29,7 +30,7 @@
     <section class="forms">
 
 
-      <form action="https://echo.htmlacademy.ru/" method="get">
+      <form action="https://echo.htmlacademy.ru/" method="get" class="clearfix">
         <fieldset class="form-infr">
           <legend class="form-title">инфраструктура:</legend>
           <label>
@@ -50,8 +51,7 @@
             <input type="checkbox" checked>апартаменты</label>
         </fieldset>
 
-
-        <fieldset class="forms-rate">
+        <fieldset class="forms-rate clearfix">
           <legend class="form-title">стоимость за сутки (р):</legend>
           <label>от
             <input type="text" name="rate-window" value="0">
@@ -67,16 +67,16 @@
             <div class="toggle toggle-left"></div>
             <div class="toggle toggle-right"></div>
           </div>
+          <button type="submit" class="btn-show">показать</button>
         </fieldset>
-        <button type="submit">показать</button>
-      </form>
 
+      </form>
 
     </section>
 
     <main class="main-content">
       <section class="sorting">
-        <b class="sorting-finder:">найдено:</b>
+        <b class="sorting-finder">найдено:</b>
         <span class="sorting-result"></span>
         <p class="type-title">сортировка</p>
         <ul class="sorting-type">
@@ -92,44 +92,56 @@
 
       <section class="catalog">
 
-        <div class="catalog-item">
-          <figure class="item-photo">
+        <div class="catalog-item clearfix">
+          <div class="item-photo">
             <img src="img/hotels/hotel-amara.jpg" width="135" height="90" alt="Amara resort and spa" />
-          </figure>
-          <h2 class="item-title">amara resort and spa</h2>
-          <span class="item-type">гостиница</span>
-          <span class="item-price">от 3500 р.</span>
-          <a href="#" class="item-more">подробнее</a>
-          <a href="#" class="item-reserv">забронировать</a>
-          <span class="stars"></span>
-          <p class="rating">рейтинг: 8,5</p>
-        </div>
-
-        <div class="catalog-item">
-          <figure class="item-photo">
-            <img src="img/hotels/hotel-desert.jpg" width="135" height="90" alt="Desert quail inn" />
-          </figure>
-          <h2 class="item-title">desert quail inn</h2>
-          <span class="item-type">мотель</span>
-          <span class="item-price">от 2000 р.</span>
-          <a href="#" class="item-more">подробнее</a>
-          <a href="#" class="item-reserv">забронировать</a>
-          <span class="stars"></span>
-          <p class="rating">рейтинг: 8,9</p>
-        </div>
-
-        <div class="catalog-item">
-          <div class="catalog-item">
-            <figure class="item-photo">
-              <img src="img/hotels/hotel-villas.jpg" width="135" height="90" alt="villas at poco" />
-            </figure>
-            <h2 class="item-title">villas at poco diablo</h2>
-            <span class="item-type">апартаменты</span>
-            <span class="item-price">от 4000 р.</span>
+          </div>
+          <div class="details">
+            <h2 class="item-title">amara resort and spa</h2>
+            <span class="item-type">гостиница</span>
+            <span class="item-price">от 3500 р.</span>
             <a href="#" class="item-more">подробнее</a>
             <a href="#" class="item-reserv">забронировать</a>
+          </div>
+          <div class="item-rate">
             <span class="stars"></span>
             <p class="rating">рейтинг: 8,5</p>
+          </div>
+        </div>
+
+        <div class="catalog-item clearfix">
+          <div class="item-photo">
+            <img src="img/hotels/hotel-desert.jpg" width="135" height="90" alt="Desert quail inn" />
+          </div>
+          <div class="details">
+            <h2 class="item-title">desert quail inn</h2>
+            <span class="item-type">мотель</span>
+            <span class="item-price">от 2000 р.</span>
+            <a href="#" class="item-more">подробнее</a>
+            <a href="#" class="item-reserv">забронировать</a>
+          </div>
+          <div class="item-rate">
+            <span class="stars"></span>
+            <p class="rating">рейтинг: 8,9</p>
+          </div>
+        </div>
+
+        <div class="catalog-item clearfix">
+          <div class="catalog-item">
+            <div class="item-photo">
+              <img src="img/hotels/hotel-villas.jpg" width="135" height="90" alt="villas at poco" />
+            </div>
+            <div class="details">
+              <h2 class="item-title">villas at poco diablo</h2>
+              <span class="item-type">апартаменты</span>
+              <span class="item-price">от 4000 р.</span>
+              <a href="#" class="item-more">подробнее</a>
+              <a href="#" class="item-reserv">забронировать</a>
+            </div>
+            <div class="item-rate">
+              <span class="stars"></span>
+              <p class="rating">рейтинг: 8,5</p>
+            </div>
           </div>
         </div>
       </section>
@@ -143,22 +155,22 @@
       <div class="social">
         <ul>
           <li>
-            <a href="https://vk.com/"><img src="#" alt="Twitter"></a>
+            <a href="https://vk.com/"></a>
           </li>
           <li>
-            <a href="https://facebook.com/"><img src="#" alt="Facebook"></a>
+            <a href="https://facebook.com/"></a>
           </li>
           <li>
-            <a href="https://youtube.com/"><img src="#" alt="Youtube"></a>
+            <a href="https://youtube.com/"></a>
           </li>
         </ul>
       </div>
 
       <div class="developer">
         <span>website by</span>
-        <figure class="developer-logo">
+        <div class="developer-logo">
           <img src="http://placehold.it/150x100" alt="HTML Academy">
-        </figure>
+        </div>
       </div>
     </footer>
 

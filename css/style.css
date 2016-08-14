@@ -3,6 +3,9 @@ body {
 	font-family: PT Sans, sans-serif; 
 	color: #000000;
 	line-height: 21px;
+	width: 100%;
+	padding-left: 3.13%;
+	padding-right: 3.13%;
 }
 
 h1 {
@@ -16,3 +19,158 @@ h2 {
 	font-weight: bold;
 	line-height: 24px;
 }
+
+.main-navigation {
+	padding-left: 6.08%;
+	padding-right: 6.08%;
+}
+
+.main-navigation li {
+	display: inline-block;
+	list-style: none; 
+	margin-right: 10%;
+}
+
+.main-navigation li:last-child {
+	margin-right: 0;
+}
+
+.logo-block {
+	margin-left: 40%;
+}
+
+.main-content {
+	
+}
+
+.container {
+	width: 93.75%;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.features-present {
+	width: 33.33%;
+	float: left;
+	outline: 2px solid green;
+}
+
+.features-photo {
+	width: 66.66%;
+	float: left;
+}
+
+.explanation {
+	width: 31.25%;
+	float: left;
+}
+
+.explanation b {
+	display: block;
+}
+
+footer {
+	margin-top: 2.58%;
+}
+
+.hash-tag {
+	width: 31.25%;
+	float: left;
+}
+
+.social {
+	outline: 2px solid red;
+	width: 12.5%;
+	float: left;
+}
+
+.social li {
+	display: inline-block;
+	width: 5%;
+	list-style: none;
+}
+
+.developer {
+	width: 31.25%;
+	float: right;
+}
+
+
+/* inner.html */
+
+
+.form-infr {
+	float: left;
+}
+
+.form-infr label, .form-hous label {
+	display: block;
+}
+
+.form-hous {
+	float: left;
+}
+
+
+.forms-rate {
+	width: 27.33%;
+	float: right;
+}
+
+.btn-show {
+	displa: block;
+	width: 41.15%;
+	margin-left: 25%;
+	margin-top: 10.67%;
+}
+
+.sorting-finder {
+	outline: 2px solid red;
+	width: 5%;
+}
+
+.sorting-result, .type-title, .sorting-type, .sorting-type li, .arrows {
+	display: inline-block;
+}
+
+.sorting-result {
+	width: 1.67%;
+}
+
+.type-title {
+	outline: 2px solid red;
+	width: 8%;
+}
+
+.sorting-type {
+	outline: 2px solid green;
+    width: 30%;	
+	list-style: none;
+}
+
+.sorting-type li {
+	outline: 2px solid red;
+	width: 21%;
+}
+
+.item-photo {
+	width: 6%;
+	float: left;
+}
+
+.details {
+	outline: 2px solid red;
+	width: 32.5%;
+	float: left;
+	margin-left: 8%;
+}
+
+.item-rate {
+	width: 10.83%;
+	float: right;
+}
+
