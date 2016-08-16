@@ -12,12 +12,12 @@
   <div class="container">
     <header>
       <div class="header-container">
-        <nav class="main-navigation">
+        <nav class="main-navigation inner-container">
           <ul>
             <li><a href="#">информация</a></li>
             <li><a href="#">фото и видео</a></li>
             <li>
-              <a href="#"><img src="http://placehold.it/150x100" alt="Логотип" class="head-logo"></a>
+              <a href="index.html"><img src="img/logo-roof.png" width="138" height="70" alt="Логотип" class="head-logo"></a>
             </li>
             <li><a href="#">карта штата</a></li>
             <li><a href="#">гостиницы</a></li>
@@ -26,63 +26,59 @@
       </div>
     </header>
 
-
-    <section class="forms">
-
-
-      <form action="https://echo.htmlacademy.ru/" method="get" class="clearfix">
-        <fieldset class="form-infr">
-          <legend class="form-title">инфраструктура:</legend>
-          <label>
-            <input type="checkbox" checked>бассейн</label>
-          <label>
-            <input type="checkbox">парковка</label>
-          <label>
-            <input type="checkbox">wi-fi</label>
-        </fieldset>
-
-        <fieldset class="form-hous">
-          <legend class="form-title">тип жилья:</legend>
-          <label>
-            <input type="checkbox" checked>гостиница</label>
-          <label>
-            <input type="checkbox" checked>мотель</label>
-          <label>
-            <input type="checkbox" checked>апартаменты</label>
-        </fieldset>
-
-        <fieldset class="forms-rate clearfix">
-          <legend class="form-title">стоимость за сутки (р):</legend>
-          <label>от
-            <input type="text" name="rate-window" value="0">
-          </label>
-          <label>до
-            <input type="text" name="rate-window" value="3000">
-          </label>
-
-          <div class="range">
-            <div class="range-line">
-              <div class="range-line-active"></div>
-            </div>
-            <div class="toggle toggle-left"></div>
-            <div class="toggle toggle-right"></div>
-          </div>
-          <button type="submit" class="btn-show">показать</button>
-        </fieldset>
-
-      </form>
-
-    </section>
-
     <main class="main-content">
-      <section class="sorting">
-        <b class="sorting-finder">найдено:</b>
-        <span class="sorting-result"></span>
+      <section class="forms inner-container">
+        <form action="https://echo.htmlacademy.ru/" method="get" class="clearfix">
+          <fieldset class="form-infr">
+            <legend class="form-title">инфраструктура:</legend>
+            <label>
+              <input type="checkbox" name="pool" checked>бассейн</label>
+            <label>
+              <input type="checkbox" name="parking">парковка</label>
+            <label>
+              <input type="checkbox" name="wifi">wi-fi</label>
+          </fieldset>
+
+          <fieldset class="form-hous">
+            <legend class="form-title">тип жилья:</legend>
+            <label>
+              <input type="checkbox" name="guesthous" checked>гостиница</label>
+            <label>
+              <input type="checkbox" name="motel" checked>мотель</label>
+            <label>
+              <input type="checkbox" name="apartments" checked>апартаменты</label>
+          </fieldset>
+
+          <fieldset class="forms-rate clearfix">
+            <legend class="form-title">стоимость за сутки (р):</legend>
+            <label>от
+              <input type="text" name="rate-window" value="0">
+            </label>
+            <label>до
+              <input type="text" name="rate-window" value="3000">
+            </label>
+
+            <div class="range">
+              <div class="range-line">
+                <div class="range-line-active"></div>
+              </div>
+              <div class="toggle toggle-left"></div>
+              <div class="toggle toggle-right"></div>
+            </div>
+            <button type="submit" class="btn-show">показать</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="sorting inner-container">
+        <b class="sorting-finder">найдено:
+          <span class="sorting-result">3</span>
+        </b>
         <p class="type-title">сортировка</p>
         <ul class="sorting-type">
-          <li>по цене</li>
-          <li><a href="#">по типу</a></li>
-          <li><a href="#">по рейтингу</a></li>
+          <li><a class="active">по цене</a></li>
+          <li><a href="#" class="sort-type">по типу</a></li>
+          <li><a href="#" class="sort-rate">по рейтингу</a></li>
         </ul>
         <div class="arrows">
           <a href="#" class="up-down"></a>
@@ -94,14 +90,16 @@
 
         <div class="catalog-item clearfix">
           <div class="item-photo">
-            <img src="img/hotels/hotel-amara.jpg" width="135" height="90" alt="Amara resort and spa" />
+            <a href="#"><img src="img/hotels/hotel-amara.jpg" width="135" height="90" alt="Amara resort and spa" /></a>
           </div>
           <div class="details">
-            <h2 class="item-title">amara resort and spa</h2>
+            <h2 class="item-title"><a href="#">amara resort and spa</a></h2>
             <span class="item-type">гостиница</span>
             <span class="item-price">от 3500 р.</span>
-            <a href="#" class="item-more">подробнее</a>
-            <a href="#" class="item-reserv">забронировать</a>
+            <div class="item-buttons">
+              <a href="#" class="item-more">подробнее</a>
+              <a href="#" class="item-reserv">забронировать</a>
+            </div>
           </div>
           <div class="item-rate">
             <span class="stars"></span>
@@ -111,14 +109,16 @@
 
         <div class="catalog-item clearfix">
           <div class="item-photo">
-            <img src="img/hotels/hotel-desert.jpg" width="135" height="90" alt="Desert quail inn" />
+            <a href="#"><img src="img/hotels/hotel-desert.jpg" width="135" height="90" alt="Desert quail inn" /></a>
           </div>
           <div class="details">
-            <h2 class="item-title">desert quail inn</h2>
+            <h2 class="item-title"><a href="#">desert quail inn</a></h2>
             <span class="item-type">мотель</span>
             <span class="item-price">от 2000 р.</span>
-            <a href="#" class="item-more">подробнее</a>
-            <a href="#" class="item-reserv">забронировать</a>
+            <div class="item-buttons">
+              <a href="#" class="item-more">подробнее</a>
+              <a href="#" class="item-reserv">забронировать</a>
+            </div>
           </div>
           <div class="item-rate">
             <span class="stars"></span>
@@ -127,21 +127,21 @@
         </div>
 
         <div class="catalog-item clearfix">
-          <div class="catalog-item">
-            <div class="item-photo">
-              <img src="img/hotels/hotel-villas.jpg" width="135" height="90" alt="villas at poco" />
-            </div>
-            <div class="details">
-              <h2 class="item-title">villas at poco diablo</h2>
-              <span class="item-type">апартаменты</span>
-              <span class="item-price">от 4000 р.</span>
+          <div class="item-photo">
+            <a href="#"><img src="img/hotels/hotel-villas.jpg" width="135" height="90" alt="villas at poco" /></a>
+          </div>
+          <div class="details">
+            <h2 class="item-title"><a href="#">villas at poco diablo</a></h2>
+            <span class="item-type">апартаменты</span>
+            <span class="item-price">от 4000 р.</span>
+            <div class="item-buttons">
               <a href="#" class="item-more">подробнее</a>
               <a href="#" class="item-reserv">забронировать</a>
             </div>
-            <div class="item-rate">
-              <span class="stars"></span>
-              <p class="rating">рейтинг: 8,5</p>
-            </div>
+          </div>
+          <div class="item-rate">
+            <span class="stars"></span>
+            <p class="rating">рейтинг: 8,5</p>
           </div>
         </div>
       </section>
