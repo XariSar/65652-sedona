@@ -26,7 +26,7 @@ body {
 h1 {
 	font-size: 21px;
 	font-weight: bold;
-	line-height: 26px;
+	line-height: 1;
 }
 
 h2 {
@@ -40,14 +40,30 @@ h2 {
 	padding-right: 6%;
 }
 
+.main-navigation {
+	height: 58px;
+}
+
 .main-navigation ul {
-	width: 1200px;
+	font-size: 0;
 	margin-top: 0;
 	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.roof {
+	position: absolute;
+	left: 45.5%;
+}
+
+.roof img {
+	width: 138px; 
+	height: 70px;
 }
 
 .main-navigation li {
-	width: 18%;
+	font-size: 14px;
+	width: 25%;
 	display: inline-block;
 	list-style: none; 
 	vertical-align: middle;
@@ -62,10 +78,12 @@ h2 {
 }
 
 .logo-welcome {
+	background-color: #76a9cc;
+	background-image: url("../img/background-logo.jpg");
 	padding-top: 76px;
-	width: 458px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 
 .intro-represent {
@@ -75,47 +93,44 @@ h2 {
 	text-align: center;
 }
 
-.intro-ad {
+.intro {
 	padding-top: 61px;
 	padding-bottom: 56px;
 }
 
-.intro-ad  h1{
-	width: 50%;
+
+.intro  h1{
+	width: 440px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.intro-ad  p {
-	width: 60%;
+.intro  p {
+	width: 490px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 }
 
 .features-present {
-	width: 30%;
+	width: 33.33%;
 	float: left;
 	outline: 2px solid green;
 }
 
-.town {
-	width: 30%;
+.features-photo {
+	height: 256px;
+	width: 66.66%;
 	float: left;
 }
 
-.town-photo {
-	width: 70%;
-	float: right;
+.features-photo img {
+	max-width: 100%;
+	height: auto;
 }
 
-.canyon {
-	width: 30%;
-	float: right;
-}
-
-.canyon-photo {
-	width: 70%;
+.features-present {
+	width: 33.33%;
 	float: left;
 }
 
@@ -131,30 +146,31 @@ h2 {
 	display: block;
 }
 
+.hotel {
+	padding-top: 58px;
+}
+
 .hotel-search {
 	display: none;
 }
 
-.hotel-guidance {
-	padding-top: 58px;
-}
-
-.hotel-guidance  h2{
-	width: 50%;
+.hotel  h2{
+	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 }
 
-.hotel-guidance  p {
-	width: 40%;
+.hotel  p {
+	width: 576px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 }
 
 .map {
-	min-height: 300px;
+	min-height: 473px;
+	background-image: url("../img/map.jpg");
 }
 
 footer {
@@ -164,8 +180,13 @@ footer {
 	text-align: center;
 }
 
+.hash-tag, .social, .developer {
+	display: inline-block;
+}
+
 .hash-tag {
 	outline: 2px solid red;
+	padding-top: 15px;
 	width: 33.33%;
 	float: left;
 }
@@ -185,10 +206,19 @@ footer {
 .developer {
 	outline: 2px solid red;
 	width: 33.33%;
-	width: 33.33%;
 	float: left;
 }
 
+.developer span {
+	float: left;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.developer-logo {
+	margin-top: 5px;
+	margin-right: 100px;
+} 
 
 /* inner.html */
 
@@ -221,35 +251,57 @@ footer {
 }
 
 .sorting {
+	font-size: 0;
 	padding-top: 39px;
 	padding-bottom: 39px;
 }
 
-.sorting-finder {
-	display: inline-block;
-	outline: 2px solid red;
-	width: 10%;
+.sorting-left {
+	width: 90%;
+	float: left;
 }
 
-.sorting-result, .type-title, .sorting-type, .sorting-type li, .arrows {
+.sorting-right {
+	width: 10%;
+	float: right;
+}
+
+.sorting-finder {
+	float: left;
+	margin-right: 14px;
+	font-size: 21px;
+	outline: 0px solid red;
+	width: 145px;
+}
+
+.sorting-result, .sorting-finder, .type-title, .sorting-type, .sorting-type li, .arrows {
 	display: inline-block;
 }
 
 .type-title {
-	outline: 2px solid red;
-	width: 15%;
+	float: left;
+	font-size: 12px;
+	margin-right: 40px;
+	margin-top: 0px;
+	width: 80px;
 	text-align: center;
 }
 
 .sorting-type {
-	outline: 2px solid green;
-    width: 35%;	
+	float: left;
+	font-size: 12px;
+	margin-top: 0px;
+	padding: 0;
+	outline: 0px solid green;
+    width: 40.66%;	
 	list-style: none;
+	height: 20px;
 }
 
 .sorting-type li {
-	outline: 2px solid red;
-	width: 30%;
+	outline: 0px solid red;
+	float: left;
+	width: 28%;
 }
 
 .arrows {
@@ -266,13 +318,24 @@ footer {
 .item-photo {
 	width: 135px;
 	float: left;
+	margin-right: 30px;
+}
+
+.hotel-photo {
+	width: 135px;
+	height: 90px;
 }
 
 .details {
 	outline: 2px solid red;
-	width: 30%;
+	width: 40%;
 	float: left;
-	margin-left: 30px;
+}
+
+.item-title {
+	margin-top: 0;
+	margin-bottom: 17px;
+	font-size: 21px;
 }
 
 .item-buttons {
@@ -284,6 +347,7 @@ a {
 }
 
 .item-rate {
+	outline: 2px solid red;
 	width: 10.83%;
 	float: right;
 }

@@ -14,13 +14,13 @@
       <div class="header-container">
         <nav class="main-navigation inner-container">
           <ul>
-            <li><a href="#">информация</a></li>
-            <li><a href="#">фото и видео</a></li>
-            <li>
+            <li class="nav-left"><a href="#">информация</a></li>
+            <li class="nav-left"><a href="#">фото и видео</a></li>
+            <li class="roof">
               <a href="index.html"><img src="img/logo-roof.png" width="138" height="70" alt="Логотип" class="head-logo"></a>
             </li>
-            <li><a href="#">карта штата</a></li>
-            <li><a href="#">гостиницы</a></li>
+            <li class="nav-right"><a href="#">карта штата</a></li>
+            <li class="nav-right"><a href="inner.html">гостиницы</a></li>
           </ul>
         </nav>
       </div>
@@ -70,27 +70,31 @@
         </form>
       </section>
 
-      <section class="sorting inner-container">
-        <b class="sorting-finder">найдено:
+      <section class="sorting inner-container clearfix">
+        <div class="sorting-left clearfix">
+          <b class="sorting-finder">найдено:
           <span class="sorting-result">3</span>
         </b>
-        <p class="type-title">сортировка</p>
-        <ul class="sorting-type">
-          <li><a class="active">по цене</a></li>
-          <li><a href="#" class="sort-type">по типу</a></li>
-          <li><a href="#" class="sort-rate">по рейтингу</a></li>
-        </ul>
-        <div class="arrows">
-          <a href="#" class="up-down"></a>
-          <a href="#" class="up-down"></a>
+          <p class="type-title">сортировка</p>
+          <ul class="sorting-type">
+            <li><a class="active">по цене</a></li>
+            <li><a href="#" class="sort-type">по типу</a></li>
+            <li><a href="#" class="sort-rate">по рейтингу</a></li>
+          </ul>
+        </div>
+        <div class="sorting-right">
+          <div class="arrows">
+            <a href="#" class="up"></a>
+            <a href="#" class="down"></a>
+          </div>
         </div>
       </section>
 
       <section class="catalog">
 
-        <div class="catalog-item clearfix">
+        <div class="catalog-item inner-container clearfix">
           <div class="item-photo">
-            <a href="#"><img src="img/hotels/hotel-amara.jpg" width="135" height="90" alt="Amara resort and spa" /></a>
+            <a href="#"><img class="hotel-photo" src="img/hotels/hotel-amara.jpg" width="135" height="90" alt="Amara resort and spa" /></a>
           </div>
           <div class="details">
             <h2 class="item-title"><a href="#">amara resort and spa</a></h2>
@@ -107,9 +111,9 @@
           </div>
         </div>
 
-        <div class="catalog-item clearfix">
+        <div class="catalog-item inner-container clearfix">
           <div class="item-photo">
-            <a href="#"><img src="img/hotels/hotel-desert.jpg" width="135" height="90" alt="Desert quail inn" /></a>
+            <a href="#"><img class="hotel-photo" src="img/hotels/hotel-desert.jpg" width="135" height="90" alt="Desert quail inn" /></a>
           </div>
           <div class="details">
             <h2 class="item-title"><a href="#">desert quail inn</a></h2>
@@ -126,9 +130,9 @@
           </div>
         </div>
 
-        <div class="catalog-item clearfix">
+        <div class="catalog-item inner-container clearfix">
           <div class="item-photo">
-            <a href="#"><img src="img/hotels/hotel-villas.jpg" width="135" height="90" alt="villas at poco" /></a>
+            <a href="#"><img class="hotel-photo" src="img/hotels/hotel-villas.jpg" width="135" height="90" alt="villas at poco" /></a>
           </div>
           <div class="details">
             <h2 class="item-title"><a href="#">villas at poco diablo</a></h2>
@@ -169,7 +173,7 @@
       <div class="developer">
         <span>website by</span>
         <div class="developer-logo">
-          <img src="http://placehold.it/150x100" alt="HTML Academy">
+          <img src="img/developer-logo.png" width="113" height="39" alt="HTML Academy">
         </div>
       </div>
     </footer>
