@@ -30,33 +30,38 @@
       <section class="forms inner-container">
         <form action="https://echo.htmlacademy.ru/" method="get" class="clearfix">
           <fieldset class="form-infr">
-            <legend class="form-title">инфраструктура:</legend>
-            <label>
-              <input type="checkbox" name="pool" checked>бассейн</label>
-            <label>
-              <input type="checkbox" name="parking">парковка</label>
-            <label>
-              <input type="checkbox" name="wifi">wi-fi</label>
+            <legend class="forms-title">инфраструктура:</legend>
+            <input id="pool" type="checkbox" name="pool" checked>
+            <label for="pool">бассейн</label>
+
+            <input id="parking" type="checkbox" name="parking">
+            <label for="parking">парковка</label>
+
+            <input id="wifi" type="checkbox" name="wifi">
+            <label for="wifi">wi-fi</label>
           </fieldset>
 
           <fieldset class="form-hous">
-            <legend class="form-title">тип жилья:</legend>
-            <label>
-              <input type="checkbox" name="guesthous" checked>гостиница</label>
-            <label>
-              <input type="checkbox" name="motel" checked>мотель</label>
-            <label>
-              <input type="checkbox" name="apartments" checked>апартаменты</label>
+            <legend class="forms-title">тип жилья:</legend>
+
+            <input id="guesthous" type="checkbox" name="guesthous" checked>
+            <label for="guesthous">гостиница</label>
+
+
+            <input type="checkbox" name="motel" checked>
+            <label id="motel">мотель</label>
+
+            <input type="checkbox" name="apartments" checked>
+            <label id="apartments">апартаменты</label>
           </fieldset>
 
           <fieldset class="forms-rate clearfix">
-            <legend class="form-title">стоимость за сутки (р):</legend>
-            <label>от
-              <input type="text" name="rate-window" value="0">
-            </label>
-            <label>до
-              <input type="text" name="rate-window" value="3000">
-            </label>
+            <legend class="forms-title">стоимость за сутки (р):</legend>
+            <span class="wand"></span>
+
+            <input class="rate-from" type="text" name="rate-window" size="10px" value="от 0">
+
+            <input class="rate-to" type="text" name="rate-window" size="10px" value="до 3000">
 
             <div class="range">
               <div class="range-line">
@@ -99,7 +104,7 @@
           <div class="details">
             <h2 class="item-title"><a href="#">amara resort and spa</a></h2>
             <span class="item-type">гостиница</span>
-            <span class="item-price">от 3500 р.</span>
+            <span class="item-price amara-price">от 3500 р.</span>
             <div class="item-buttons">
               <a href="#" class="item-more">подробнее</a>
               <a href="#" class="item-reserv">забронировать</a>
@@ -118,7 +123,7 @@
           <div class="details">
             <h2 class="item-title"><a href="#">desert quail inn</a></h2>
             <span class="item-type">мотель</span>
-            <span class="item-price">от 2000 р.</span>
+            <span class="item-price desert-price">от 2000 р.</span>
             <div class="item-buttons">
               <a href="#" class="item-more">подробнее</a>
               <a href="#" class="item-reserv">забронировать</a>
@@ -130,14 +135,14 @@
           </div>
         </div>
 
-        <div class="catalog-item inner-container clearfix">
+        <div class="catalog-item inner-container clearfix item-last">
           <div class="item-photo">
             <a href="#"><img class="hotel-photo" src="img/hotels/hotel-villas.jpg" width="135" height="90" alt="villas at poco" /></a>
           </div>
           <div class="details">
             <h2 class="item-title"><a href="#">villas at poco diablo</a></h2>
             <span class="item-type">апартаменты</span>
-            <span class="item-price">от 4000 р.</span>
+            <span class="item-price villas-price">от 4000 р.</span>
             <div class="item-buttons">
               <a href="#" class="item-more">подробнее</a>
               <a href="#" class="item-reserv">забронировать</a>
@@ -152,26 +157,26 @@
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer clearfix inner-container">
       <div class="hash-tag">
-        #visitsedona
+        <span>#visitsedona</span>
       </div>
       <div class="social">
         <ul>
           <li>
-            <a href="https://vk.com/"></a>
+            <a class="social-btn social-btn-tw" href="https://vk.com/"><span class="icon-twitter"></span></a>
           </li>
           <li>
-            <a href="https://facebook.com/"></a>
+            <a class="social-btn social-btn-fb" href="https://facebook.com/"><span class="icon-facebook"></span></a>
           </li>
           <li>
-            <a href="https://youtube.com/"></a>
+            <a class="social-btn social-btn-yt" href="https://youtube.com/"><span class="icon-youtube"></span></a>
           </li>
         </ul>
       </div>
 
       <div class="developer">
-        <span>website by</span>
+        <span>Website by</span>
         <div class="developer-logo">
           <img src="img/developer-logo.png" width="113" height="39" alt="HTML Academy">
         </div>
