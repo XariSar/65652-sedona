@@ -1,6 +1,6 @@
 body {
 	font-size: 14px;
-	font-family: PT Sans, sans-serif; 
+	font-family: PT Sans, Arial, sans-serif; 
 	color: #000000;
 	line-height: 21px;
 	background-color: #f2f2f2;
@@ -56,6 +56,11 @@ body {
 	clear: both;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .container {
 	max-width: 1200px;
 	min-width: 768px;
@@ -90,13 +95,14 @@ h2 {
 
 .main-navigation ul {
 	font-size: 0;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin: 0;
+	padding: 0;
+	position: relative;
 }
 
 .roof {
 	position: absolute;
-	left: 45.5%;
+	left: 42.42%;
 	width: 138px;
 }
 
@@ -110,6 +116,7 @@ h2 {
 .main-navigation li {
 	font-size: 14px;
 	font-weight: bold;
+	line-height: 26px;
 	color: #000000;
 	width: 24%;
 	display: inline-block;
@@ -140,6 +147,10 @@ h2 {
 	padding-top: 15px;
 }
 
+.nav-link {
+	color: #000;
+}
+
 .nav-left {
 	text-align: left;
 	vertical-align: middle;
@@ -151,7 +162,7 @@ h2 {
 }
 
 .logo-welcome {
-	height: 510px;
+	height: 432px;
 	background-color: #76a9cc;
 	background-image: url("../img/background-logo.jpg");
 	padding-top: 76px;
@@ -166,7 +177,9 @@ h2 {
 }
 
 .logo-welcome img.white-pattern {
-	margin-top: 97px;
+	margin-top: 17px;
+	width: 100%;
+	height: 57px;
 }
 
 .intro-represent {
@@ -174,6 +187,7 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	line-height: 26px;
 }
 
 .intro {
@@ -193,6 +207,8 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	line-height: 26px;
+	color: #333333;
 }
 
 .features-present b {
@@ -207,32 +223,76 @@ h2 {
 
 .features-photo img {
 	max-width: 100%;
-	height: auto;
+	height: 256px;
 }
 
 .features-present {
 	outline: 0px solid green;
 	width: 33.33%;
-	height: 255px;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 40px;
 	box-sizing: border-box;
 	float: left;
+}
+
+.features-name {
+	line-height: 21px;
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 125px;
+}
+
+.canyon .features-name {
+	margin: 0px;
+}
+
+.features-number {
+	margin-bottom: 30px;
+}
+
+.features-description {
+	margin: 0 auto;
+	width: 65%;
+	color: #333333;
+}
+
+.tourist-description {
+	margin: 0 auto;
+	width: 75%;
 }
 
 .town, .canyon {
 	background-color: #81b3d2;
 	color: #ffffff;
-	padding-top: 75px;
+	padding-top: 40px;
+	height: 256px;
+}
+
+
+.town .features-description, 
+.canyon .features-description {
+	width: 88%;
+	color: #fff;
+}
+
+.town .features-number, 
+.canyon .features-number {
+	margin-top: 20px;
 }
 
 .features-row {
 	background-color: #eeeeee;
 	margin-bottom: 54px;
+	box-sizing: border-box;
+	vertical-align: middle;
 }
 
 .features-row .features-present {
 	height: 255px;
+}
+
+.features-item {
+	height: 256px;
 }
 
 .explanation {
@@ -253,6 +313,17 @@ h2 {
 	margin-bottom: 30px;
 }
 
+.explanation p {
+	width: 70%;
+	margin: 0 auto;
+	color: #333333;
+}
+
+.explanation .p-burger {
+	width: 75%;
+	margin: 0 auto;
+}
+
 .hotel {
 	position: relative;
 	padding-bottom: 138px;
@@ -263,6 +334,13 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	line-height: 30px;
+}
+
+.hotel-description {
+	color: #333333;
+	line-height: 24px;
+	
 }
 
 .hotel  p {
@@ -275,10 +353,9 @@ h2 {
 .hotel-search {
 	background-color: #ffffff;
 	position: absolute;
-	top: 145px;
-	left: 27%;
-	outline: 0px red solid;
 	width: 570px;
+	top: 155px;
+	left: 27%;
 	height: 500px;
 }
 
@@ -298,16 +375,6 @@ h2 {
 	color: #ffffff;
 }
 
-.forms-title {
-	display: block;
-	color: #fff;
-	font-weight: bold;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 15px;
-	padding-left: 5px;
-}
-
 .form-wrapper {
 	position: relative;
 	padding-top: 55px;
@@ -318,6 +385,7 @@ form.hotel-search label {
 	font-weight: bold;
 	margin-right: 10px;
 	width: 100px;
+	line-height: 26px;
 }
 
 form.hotel-search input {
@@ -332,7 +400,7 @@ form.hotel-search input {
 input.date {
 	font-size: 14px;
 	line-height: 24px;
-	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: bold;
 	color: #000000;
 	background-color: #f2f2f2;
@@ -340,8 +408,45 @@ input.date {
 	box-sizing: border-box;
 	padding-top: 15p;
 	padding-left: 13px;
+	padding-right: 30px;
+	margin-right: 30px;
 	width: 346px;
 	height: 38px;
+	position: relative;
+}
+
+.date {
+	position: relative;
+}
+
+#check-in-date::before {
+	content: "\e800";
+	position: absolute;
+	top: 0;
+	right: 0px;
+}
+
+#leaving-date::before {
+	content: "\e800";
+	position: absolute;
+	top: 0;
+	left: 0px;
+	font-size: 1.5em;
+	color: #c2c2c2;
+}
+
+#check-in-date::before, 
+#leaving-date::before  {
+	color: #c2c2c2;
+	font-size: 1.5em;
+}
+
+.icon-calendar:hover {
+	color: #000;
+}
+
+.icon-calendar:active {
+	color: #81b3d2;
 }
 
 .hotel-search input:hover {
@@ -417,32 +522,8 @@ input.date {
 	width: 110px;
 }
 
-.icon-calendar {
-	color: #c2c2c2;
-	position: absolute;
-	font-size: 1.5em;
-}
-
-.icon-calendar:hover {
-	color: #000;
-}
-
-.icon-calendar:active {
-	color: #81b3d2;
-}
-
 .form-wrapper {
 	position: relative;
-}
-
-.icon-date {
-	left: 82%;
-	top: 20%;
-}
-
-.icon-exit {
-	left: 82%;
-	top: 41%;
 }
 
 .map {
@@ -473,6 +554,7 @@ input.date {
 }
 
 footer {
+	height: 120px; 
 	min-height: 121px;
 	padding-top: 36px;
 	padding-bottom: 36px;
@@ -487,7 +569,7 @@ footer {
 	position: relative;
 	outline: 0px solid red;
 	padding-top: 15px;
-	width: 33.33%;
+	width: 23.33%;
 	float: left;
 	font-size: 21px;
 	font-weight: bold;
@@ -505,7 +587,7 @@ footer {
 	position: relative;
 	outline: 0px solid red;
 	width: 33.33%;
-	margin-left: 0;
+	margin-left: 90px;
 	float: left;
 }
 
@@ -540,23 +622,21 @@ footer {
 	color: #88b6d1;
 }
 
-.social ul {
-	left: 55px;
-	top: 0px;
-}
-
 .developer {
 	position: relative;
 	float: right;
-	padding-left: 0px;
+	box-sizing: border-box;
+	padding-left: 43px;
+	margin-right: 80px;
 	outline: 0px solid red;
-	width: 33.33%;
+	width: 23.33%;
 	min-height: 75px;
 }
 
 .developer span {
 	display: inline-block;
-	top: 28px;
+	line-height: 26px;
+	top: 25px;
 	left: 83px;
 	float: left;
 }
@@ -568,7 +648,6 @@ footer {
 	width: 113px; 
 	height: 39px;
 	margin-top: 5px;
-	margin-right: 100px;
 } 
 
 .developer .developer-logo:hover {
@@ -579,7 +658,7 @@ footer {
 	background-image: url("../img/developer-logo-down.png");
 } 
 
-.developer span, .hash-tag span, .developer-logo, .footer li, .social ul {
+.developer span, .hash-tag span, .developer-logo, .footer li {
 	position: absolute;
 }
 
@@ -594,8 +673,16 @@ footer {
 	color: #fff;
 }
 
+.main-content form {
+	width: ;
+}
+
 .forms fieldset {
 	border: 0;
+}
+
+.forms label {
+	line-height: 26px;
 }
 
 input[type="checkbox"] {
@@ -641,68 +728,81 @@ input[type="checkbox"]:checked + label::before {
 	width: 20%;
 	height: 130px;
 	float: left;
-	padding-top: 55px;
 	padding-left: 0;
-	margin-left: 0;
-	margin-right: 27px;
+	margin-left: 20px;
+	margin-right: -12px;
 }
 
-.form-infr legend{
-	position: absolute;
-	top: 10px;
-	left: 5px;
+.form-infr {
+	margin-right: 10px;
 }
 
-.form-hous legend{
-	position: absolute;
-	top: 10px;
-	left: 5px;
+.forms-title {
+	display: block;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	margin-left: -10px;
+	line-height: 21px;
 }
 
-.forms-rate legend{
-	position: absolute;
-	top: 10px;
-	left: 60px;
-}
-
-.form-infr label, .form-hous label {
+.form-infr label, 
+.form-hous label {
 	display: inline-block;
 }
 
 .forms-rate {
-	text-align: right;
+	margin-left: 70%;
+	width: 30%;
+}
+
+.price-controls {
+	height: 36px; 
+	margin-bottom: 20px;
+	border: 2px solid #fff;
 	position: relative;
-	width: 325px;
-	float: right;
+	width: 318px;
 }
 
-.wand {
-	position: absolute;
-	top: 59px;
-	left: 202px;
-	width: 2px;
-	height: 22px;
-	background-color: #fff;
+.price-controls ::after {
+		content: "";
+		position: absolute;
+		top: 22%;
+		left: 50%;
+		width: 2px;
+		height: 22px;
+		background: #fff;
 }
 
-.forms-rate input {
-	width: 40%;
-	margin-top: 50px;
+.price-controls label {
+	display: inline-block;
+	vertical-align: top; 
+	font-size: 14px;
+	line-height: 38px;
+	cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+	width: 90px;
+	padding-left: 65px;
+}
+
+.price-controls input {
+	width: 50px;
+	margin: 0px;
 	height: 24px;
-	color:  #ffffff;
+	color: inherit;
+	font: inherit;
 	text-align: center;
 	background-color: rgba(0,0,0,0);
-	border: 2px solid #ffffff;
+	border: none;
 }
 
-.forms-rate .rate-from {
-	margin-right: -5px;
-	border-right: 0px;
-}
 
-.forms-rate .rate-to {
-	border-left: 0;
-}
 
 .form-hous {
 	float: left;
@@ -710,27 +810,29 @@ input[type="checkbox"]:checked + label::before {
 
 .range {
 	position: relative;
-	outline: 0px solid red;
+	margin-bottom: 32px;
 }
 
-.range-line {
-	box-sizing: border-box: 
-	width: 320px;
+.range .range-line {
 	height: 2px;
-	background-color: #fff;
-	margin-top: 25px;
-	margin-left: 70px;
-	outline: 0px solid yellow; 
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-line .range-line-active {
+	width: 250px;
+	height: 2px;
+	background: #fff;
 }
 
 .toggle {
 	position: absolute;
-	border: 10px solid #fff;
+	border: 8px solid #fff;
 	border-radius: 50%;
 	width: 4px;
 	height: 4px;
 	cursor: pointer;
 	background-color: #ababab;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
 
 .toggle:active {
@@ -738,23 +840,26 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .toggle-left {
-	left: 60px;
-	top: -11px;
+	left: 0px;
+	top: -9px;
 }
 
 .toggle-right {
-	left: 290px;
-	top: -11px;
+	left: 250px;
+	top: -9px;
 }
 
 .btn-show {
+	display: block;
 	width: 39%;
 	height: 32px;
-	margin-right: 25%;
-	margin-top: 10.67%;
-	background-color: rgba(0,0,0,0);
+	margin-left: 28%;
+	background: transparent;
 	color: #fff;
 	border: 2px solid #fff;
+	border-radius: 2px;
+	font-size: 14px;
+	line-height: 20px;
 }
 
 .btn-show:hover {
@@ -782,6 +887,7 @@ color: #000;
 	float: left;
 	margin-right: 14px;
 	font-size: 21px;
+	line-height: 26px;
 	outline: 0px solid red;
 	width: 145px;
 }
@@ -793,8 +899,9 @@ color: #000;
 .type-title {
 	float: left;
 	font-size: 12px;
+	line-height: 18px;
 	margin-right: 40px;
-	margin-top: 0px;
+	margin-top: 2px;
 	width: 80px;
 	text-align: center;
 }
@@ -814,6 +921,10 @@ color: #000;
 	outline: 0px solid red;
 	float: left;
 	width: 27%;
+}
+
+.type-li, .rate-li {
+	margin-top: -2px;
 }
 
 .arrows {
@@ -880,9 +991,15 @@ color: #000;
 	color: #81b3d2;
 }
 
+.item-title a {
+	color: #000;
+	line-height: 26px;
+}
+
 .item-type, .item-price {
 	display: inline-block;
 	margin-top: 7px;
+	color: #333;
 }
 
 .item-buttons {
@@ -902,6 +1019,7 @@ a {
 
 .rating {
 	background-color: #f2f2f2;
+	color: #666666;
 	width: 109px;
 	height: 27px;
 	text-align: center;
@@ -932,13 +1050,27 @@ h2>a:visited {
 	color: #cacaca;
 }
 
-.active {
-	color: #669ec0;
+a.sort-active {
+	color: #81b3d2;
 }
 
-.sort-rate {
+a.sort-rate {
 	color: #b2b2b2;
 	border-bottom: 2px dotted #81b3d2;
+}
+
+a.sort-type {
+	border-bottom: 2px dotted #81b3d2;
+}
+
+
+
+a.sort-type, a.sort-rate {
+	color: #000000;
+}
+
+a.sort-type, a.sort-rate, a.sort-active {
+	line-height: 18px;
 }
 
 .sort-rate:hover {
@@ -948,14 +1080,6 @@ h2>a:visited {
 
 .sort-rate:visited {
 	color: #444444;
-}
-
-.sort-type {
-	border-bottom: 2px dotted #81b3d2;
-}
-
-.sort-type, .sort-rate {
-	color: #bcbcbc;
 }
 
 .sort-type:hover, .sort-rate:hover {
@@ -984,12 +1108,14 @@ h2>a:visited {
 	background-color: #81b3d2;
 	color: #fff;
 	height: 27px;
+	font-weight: bold;
 	margin-top: -3px;
 	margin-right: 6px;
 }
 
 .item-reserv {
 	text-align: center;
+	font-weight: bold;
 	padding: 5px 10px;
 	background-color: #766357;
 	color: #fff;

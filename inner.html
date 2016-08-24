@@ -14,13 +14,13 @@
       <div class="header-container">
         <nav class="main-navigation inner-container">
           <ul>
-            <li class="nav-left"><a href="#">информация</a></li>
-            <li class="nav-left"><a href="#">фото и видео</a></li>
+            <li class="nav-left"><a href="#" class="nav-link">информация</a></li>
+            <li class="nav-left"><a href="#" class="nav-link">фото и видео</a></li>
             <li class="roof">
-              <a href="index.html"><img src="img/logo-roof.png" width="138" height="70" alt="Логотип" class="head-logo"></a>
+              <a href="index.html" class="nav-link"><img src="img/logo-roof.png" width="138" height="70" alt="Логотип" class="head-logo"></a>
             </li>
-            <li class="nav-right"><a href="#">карта штата</a></li>
-            <li class="nav-right"><a href="inner.html">гостиницы</a></li>
+            <li class="nav-right"><a href="#" class="nav-link">карта штата</a></li>
+            <li class="nav-right"><a href="inner.html" class="nav-link">гостиницы</a></li>
           </ul>
         </nav>
       </div>
@@ -57,11 +57,16 @@
 
           <fieldset class="forms-rate clearfix">
             <legend class="forms-title">стоимость за сутки (р):</legend>
-            <span class="wand"></span>
 
-            <input class="rate-from" type="text" name="rate-window" size="10px" value="от 0">
+            <div class="price-controls">
+              <label class="min-price">от
+                <input class="rate-from" type="text" name="min-price" size="10px" value="0">
+              </label>
 
-            <input class="rate-to" type="text" name="rate-window" size="10px" value="до 3000">
+              <label for="" class="max-price">до
+                <input class="rate-to" type="text" name="max-price" size="10px" value="3000">
+              </label>
+            </div>
 
             <div class="range">
               <div class="range-line">
@@ -82,9 +87,9 @@
         </b>
           <p class="type-title">сортировка</p>
           <ul class="sorting-type">
-            <li><a class="active">по цене</a></li>
-            <li><a href="#" class="sort-type">по типу</a></li>
-            <li><a href="#" class="sort-rate">по рейтингу</a></li>
+            <li class="active-li"><a class="sort-active">по цене</a></li>
+            <li class="type-li"><a href="#" class="sort-type">по типу</a></li>
+            <li class="rate-li"><a href="#" class="sort-rate">по рейтингу</a></li>
           </ul>
         </div>
         <div class="sorting-right">
