@@ -14,13 +14,13 @@
       <div class="header-container">
         <nav class="main-navigation inner-container">
           <ul>
-            <li class="nav-left"><a href="#">информация</a></li>
-            <li class="nav-left"><a href="#">фото и видео</a></li>
+            <li class="nav-left"><a class="nav-link" href="#">информация</a></li>
+            <li class="nav-left nav-media"><a href="#" class="nav-link">фото и видео</a></li>
             <li class="roof">
-              <a href="index.html"><img src="img/logo-roof.png" width="138" height="70" alt="Логотип" class="head-logo"></a>
+              <a href="index.html" class="nav-link"><img src="img/logo-roof.png" width="138" height="70" alt="Логотип" class="head-logo"></a>
             </li>
-            <li class="nav-right"><a href="#">карта штата</a></li>
-            <li class="nav-right"><a href="inner.html">гостиницы</a></li>
+            <li class="nav-right nav-map"><a href="#" class="nav-link">карта штата</a></li>
+            <li class="nav-right nav-hotels"><a class="nav-link" href="inner.html">гостиницы</a></li>
           </ul>
         </nav>
       </div>
@@ -28,8 +28,8 @@
 
     <main class="main-content">
       <section class="logo-welcome">
-        <img class="3logo" src="img/Welcome-3logo.png" alt="Добро пожаловать в Седону!" width="458" height="352">
-        <img class="white-pattern" src="img/white-pattern.png" width="1200" height="57">
+        <img class="3logo" src="img/welcome-logo.png" alt="Добро пожаловать в Седону!" width="458" height="352">
+        <img class="white-pattern" src="img/white-pattern.png" width="1200" height="57" alt="#">
       </section>
 
 
@@ -47,7 +47,7 @@
             <b class="features-name">
             Настоящий городок
           </b>
-            <p class="features-number">
+            <p class="features-number white-number">
               - №1 -
             </p>
             <p class="features-description">
@@ -60,18 +60,18 @@
         </div>
 
         <div class="features-explanation clearfix">
-          <div class="explanation">
-            <img src="img/features-hous.png" width="75" height="72" alt="Жилье">
+          <div class="explanation hous">
+
             <b>Жилье</b>
             <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="explanation">
-            <img src="img/features-burger.png" width="75" height="72" alt="Еда">
+          <div class="explanation burger">
+
             <b>Еда</b>
             <p class="p-burger">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
-          <div class="explanation">
-            <img src="img/features-gift.png" width="75" height="72" alt="сувениры">
+          <div class="explanation gift">
+
             <b>Сувениры</b>
             <p>не только китайского, но и местного производства!</p>
           </div>
@@ -85,7 +85,7 @@
             <b class="features-name">
             Там есть мост дьявола
           </b>
-            <p class="features-number">
+            <p class="features-number white-number">
               - №2 -
             </p>
             <p class="features-description">
@@ -103,7 +103,7 @@
               - №3 -
             </p>
             <p class="features-description">
-              все достопримечательности находятся близко
+              все достопримечательности находятся очень близко
             </p>
           </div>
 
@@ -143,12 +143,12 @@
           <br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
 
+        <a class="form-title" href="inner.html">
+          <h3>поиск гостиницы в Седоне</h3>
+        </a>
 
         <form class="hotel-search" action="https://echo.htmlacademy.ru/" method="get">
 
-          <a class="form-title" href="inner.html">
-            <h3>поиск гостиницы в Седоне</h3>
-          </a>
           <div class="form-wrapper">
 
             <label for="check-in-date">Дата заезда:</label>
@@ -194,7 +194,7 @@
           <li>
             <a class="social-btn icon-facebook" href="https://facebook.com/"></a>
           </li>
-          <li>
+          <li class="li-youtube">
             <a class="social-btn icon-youtube" href="https://youtube.com/"></a>
           </li>
         </ul>
@@ -203,6 +203,7 @@
       <div class="developer">
         <span>Website by</span>
         <a class="developer-logo" href="https://htmlacademy.ru/">
+          <img src="img/developer-logo.png" width="113" height="39" alt="Разработчик">
         </a>
       </div>
     </footer>
