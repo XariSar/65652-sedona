@@ -250,7 +250,7 @@ h2 {
 }
 
 .features-photo img {
-	height:100%;
+	height: 100%;
 }
 
 .features-present {
@@ -288,15 +288,28 @@ h2 {
 	color: #fff;
 }
 
-.features-description {
+.features-present .features-description {
+	width: 60%;
 
 	margin: 0px auto;
 
 	color: #333333;
 }
 
+.features-present .city-description {
+		width: 75%;
+}
+
 .features-present .tourist-description {
 	width: 60%;
+}
+
+.features-row .features-present {
+	height: 255px;
+}
+
+.features-present .road-description {
+		width: 70%;
 }
 
 .town, .canyon {
@@ -336,18 +349,6 @@ h2 {
 	background-color: #eeeeee;
 }
 
-.features-row .features-present {
-	height: 255px;
-}
-
-.features-present .features-description {
-	width: 60%;
-}
-
-.features-present .road-description {
-		width: 70%;
-}
-
 .features-item {
 	height: 256px;
 }
@@ -369,27 +370,32 @@ h2 {
 	background-repeat: no-repeat;
 }
 
+.hous {
+	width: 33.33%;
+	height: 330px;
+}
+
 .hous::before {
 	content: "";
 	position: absolute;
 	background-image: url(features-sprite.png);
 	background-position: -15px -15px;
-	width: 20px;
-	height: 20px;
+	width: 64px;
+	height: 76px;
 }
 
 .burger::before {
 	position: absolute;
 	content: "";
-		background-image: url(features-sprite.png);
-    background-position: -5px -5px;
-		width: 20px;
-		height: 20px;
+	background-image: url(features-sprite.png);
+  background-position: -5px -5px;
+	width: 20px;
+	height: 20px;
 }
 
 .gift::before {
 	content: "";
-
+	position: absolute;
 	background-image: url(features-sprite.png);
 	background-position: 5px 5px;
 }
@@ -423,12 +429,10 @@ h2 {
 
 .hotel {
 	position: relative;
-
 	height: 240px;
-	padding-top: 0px;
 }
 
-.hotel  h2{
+.hotel  h2 {
 	width: 400px;
 	margin-right: auto;
 	margin-left: auto;
@@ -439,12 +443,10 @@ h2 {
 }
 
 .hotel-description {
-	margin-top: 10px;
 
 	color: #333333;
 
 	line-height: 24px;
-
 }
 
 .hotel p {
@@ -521,7 +523,7 @@ form.hotel-search input {
 
 	display: inline-block;
 
-	width: 300px;
+	width: 270px;
 }
 
 input.date {
