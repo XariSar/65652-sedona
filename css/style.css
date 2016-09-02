@@ -258,11 +258,9 @@ h2 {
 
 	box-sizing: border-box;
 	width: 33.33%;
-	padding-top: 52px;
+	padding-top: 50px;
 
 	text-align: center;
-
-	outline: 0px solid green;
 }
 
 .features-name {
@@ -272,6 +270,11 @@ h2 {
 	margin-bottom: 10px;
 
 	line-height: 21px;
+}
+
+.devil-bridge {
+padding-bottom: 10px;
+
 }
 
 .canyon .features-name {
@@ -301,7 +304,7 @@ h2 {
 }
 
 .features-present .tourist-description {
-	width: 60%;
+	width: 66%;
 }
 
 .features-row .features-present {
@@ -440,6 +443,7 @@ h2 {
 	text-align: center;
 
 	line-height: 30px;
+	padding-top: 1px;
 }
 
 .hotel-description {
@@ -447,6 +451,8 @@ h2 {
 	color: #333333;
 
 	line-height: 24px;
+
+	padding-top: -5px;
 }
 
 .hotel p {
@@ -469,7 +475,8 @@ h2 {
 	min-height: 395px;
 	margin-left: -285px;
 	padding: 50px;
-	padding-top: 55px;
+	padding-top: 53px;
+	padding-bottom: 45px;
 
 	background-color: #ffffff;
 }
@@ -478,11 +485,12 @@ h2 {
 	display: block;
 
 	width: 568px;
-	height: 84px;
+	height: 110px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 50px;
-	padding-top: 10px;
+	margin-top: 47px;
+	padding-bottom: 15px;
+	padding-top: 5px;
 
 	text-align: center;
 
@@ -498,6 +506,7 @@ h2 {
 
 	font-size: 21px;
 	line-height: 26px;
+	padding-top: 8px;
 }
 
 .form-wrapper {
@@ -510,12 +519,13 @@ form.hotel-search input {
 
 #check-in-date {
 	margin-top: 0;
-	margin-left: 15px;
+	margin-left: 10px;
 }
 
 #leaving-date {
 	margin-top: 30px;
-	margin-left: 53px;
+	margin-left: 55px;
+	padding-left: 11px;
 }
 
 .date-container {
@@ -529,7 +539,7 @@ form.hotel-search input {
 input.date {
 	box-sizing: border-box;
 	width: 345px;
-	height: 38px;
+	height: 37px;
 	padding-top: 15p;
 	padding-right: 15px;
 	padding-left: 15px;
@@ -559,22 +569,26 @@ form.hotel-search label {
 
 .check-in {
 	position: absolute;
-	top: 10px;
-	left: 327px;
-	font-size: 20px;
+	top: 8px;
+	left: 322px;
+	font-size: 21px;
 	content: "\e800";
 	color: #c2c2c2;
 }
 
 .leaving {
 	position: absolute;
-	top: 40px;
+	top: 37px;
 	left: 365px;
 
-	font-size: 20px;
+	font-size: 21px;
 
 	content: "\e800";
 	color: #c2c2c2;
+}
+
+label.label-children {
+	padding-right: 8px;
 }
 
 .icon-calendar:hover {
@@ -593,12 +607,17 @@ form.hotel-search label {
 	background-color: #fff;
 }
 
+.label-check {
+	letter-spacing: 0.5px;
+}
+
 .people-input {
 	margin-left: 15px;
 
 	background-color: #f2f2f2;
 
 	line-height: 26px;
+	height: 29px;
 }
 
 .people {
@@ -631,13 +650,13 @@ form.hotel-search label {
 }
 
 .mp-adults-minus {
-	top: 50%;
-	left: 28%;
+	top: 144px;
+	left: 27%;
 }
 
 .mp-adults-plus {
-	top: 50%;
-	left: 42%;
+	top: 145px;
+	left: 200px;
 }
 
 .mp-children-minus {
@@ -647,21 +666,21 @@ form.hotel-search label {
 
 .mp-children-plus {
 	top: 51%;
-	left: 91%;
+	left: 93%;
 }
 
 #adults {
-	width: 115px;
-	margin-right: 50px;
-	margin-left: 30px;
-
+	width: 113px;
+	margin-right: 44px;
+	margin-left: 33px;
 	text-align: center;
 }
 
 #children {
-	width: 110px;
-	margin-left: 15px;
-
+	width: 115px;
+	padding-left: 0px;
+	margin-left: 12px;
+	margin-right: 2px;
 	text-align: center;
 }
 
@@ -671,9 +690,12 @@ form.hotel-search label {
 	background-image: url("../img/map.jpg");
 }
 
-.map-search {
+button.map-search {
 	font-size: 21px;
 	line-height: 26px;
+	padding-top: 25px;
+	padding-bottom: 5px;
+	vertical-align: middle;
 }
 
 .map-search:hover {
@@ -689,7 +711,7 @@ form.hotel-search label {
 .hotel-search button {
 	box-sizing: border-box;
 	width: 458px;
-	height: 58px;
+	height: 55px;
 	margin-top: 54px;
 	margin-left: 5px;
 	padding-top: 0px;
@@ -783,10 +805,6 @@ footer {
 	vertical-align: middle;
 }
 
-.li-youtube {
-	margin-top: 1px;
-}
-
 .icon-youtube {
 	font-size: 23px;
 	line-height: 20px;
@@ -810,7 +828,7 @@ footer {
 	box-sizing: border-box;
 	width: 18%;
 	height: 39px;
-	margin-top: 20px;
+	margin-top: 18px;
 	margin-right: 3%;
 	padding-top: 8px;
 	padding-left: 0%;
@@ -937,7 +955,7 @@ input[type="checkbox"]:checked + label::before {
 .forms-title {
 	display: block;
 
-	margin-left: 12px;
+	margin-left: -15px;
 	padding-top: 27px;
 	padding-bottom: 15px;
 
@@ -950,6 +968,14 @@ input[type="checkbox"]:checked + label::before {
 	line-height: 21px;
 }
 
+.title-checkbox {
+	padding-left: 12%;
+}
+
+.title-type-hous {
+	padding-left: 11%;
+}
+
 .form-infr label,
 .form-hous label {
 	display: inline-block;
@@ -958,23 +984,20 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .forms-rate {
-	min-width: 10%;
-	max-width: 45%;
-
+	width: 310px;
 	margin-left: 70%;
 }
 
 .price-controls {
 	position: relative;
 
-	width: 100%;
+	width: 101%;
 
 	height: 25px;
 	margin-top: -8px;
 	margin-bottom: 20px;
-	margin-left: 0px;
+	margin-left: -5px;
 	padding-top: 7px;
-
 	border: 2px solid #fff;
 }
 
@@ -1003,8 +1026,22 @@ input[type="checkbox"]:checked + label::before {
 
 .price-controls .min-price,
 .price-controls .max-price {
-	width: 25%;
+	margin-top: -7px;
+	width: 13%;
 	padding-left: 20%;
+}
+
+.price-controls .min-price {
+	margin-left: 2px;
+}
+
+.min-price .rate-from {
+	margin-left: -5px;
+}
+
+.price-controls .max-price {
+	margin-left: 12%;
+	width: 25%;
 }
 
 .price-controls input {
@@ -1037,10 +1074,11 @@ input[type="checkbox"]:checked + label::before {
 	padding-left: -23px;
 	width: 100%;
 	background: rgba(255, 255, 255, 0.3);
+	margin-left: -2px;
 }
 
 .range-line .range-line-active {
-	width: 90%;
+	width: 85%;
 	height: 2px;
 
 	background: #fff;
@@ -1067,19 +1105,19 @@ input[type="checkbox"]:checked + label::before {
 .toggle-left {
 	top: -9px;
 
-	left: 0px;
+	left: -2px;
 }
 
 .toggle-right {
 	top: -9px;
 
-	left: 90%;
+	left: 80%;
 }
 
 .btn-show {
 	display: block;
 
-	width: 41%;
+	width: 44%;
 	height: 35px;
 	margin-left: 26%;
 
@@ -1226,7 +1264,7 @@ background-color: #fff;
 }
 
 .item-last {
-	padding-bottom: 13px;
+	padding-bottom: 20px;
 
 	border-bottom: 2px solid #e5e5e5;
 }
@@ -1274,7 +1312,7 @@ a {
 p.rating {
 	width: 109px;
 	height: 24px;
-	margin-top: 58px;
+	margin-top: 60px;
 	margin-left: 5px;
 
 	text-align: center;
@@ -1401,7 +1439,7 @@ a.sort-type, a.sort-rate, a.sort-active {
 }
 
 .desert-price {
-	margin-left: 55px;
+	margin-left: 60px;
 }
 
 .villas-price {
