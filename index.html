@@ -56,7 +56,7 @@
             </p>
           </div>
           <div class="features-photo">
-            <img src="img/content-town.jpg" width="800" height="400" alt="Городок Седона">
+            <img src="img/content-town.jpg" width="800" height="256" alt="Городок Седона">
           </div>
         </div>
 
@@ -84,7 +84,7 @@
           </div>
           <div class="features-present canyon">
             <b class="features-name devil-bridge">
-            Там есть мост дьявола
+            Там есть мост&nbsp;дьявола
           </b>
             <p class="features-number white-number">
               — №2 —
@@ -149,31 +149,41 @@
         </a>
 
         <form class="hotel-search" action="https://echo.htmlacademy.ru/" method="get">
-
           <div class="form-wrapper">
-
-            <label for="check-in-date" class="label-check">Дата заезда:</label>
-            <div class="date-container">
-            <input id="check-in-date" class="date" type="text" value="24 апреля 2016">
-            <span class="icon-calendar check-in"></span>
+            <div class="form-row">
+              <label for="check-in-date" class="label-check">Дата заезда:</label>
+              <div class="date-container">
+                <input id="check-in-date" class="date" type="text" value="24 апреля 2016">
+                <span class="icon-calendar check-in"></span>
+              </div>
             </div>
 
-
-            <label class="for-leaving" for="leaving-date">Дата выезда:</label>
-            <div class="date-container">
-            <input id="leaving-date" class="date" type="text" value="4 июля 2016">
-            <span class="icon-calendar leaving"></span>
+            <div class="form-row">
+              <label class="for-leaving" for="leaving-date">Дата выезда:</label>
+              <div class="date-container">
+                <input id="leaving-date" class="date" type="text" value="4 июля 2016">
+                <span class="icon-calendar leaving"></span>
+              </div>
             </div>
-            <div class="people">
+
+            <div class="form-row">
+            <div class="adults-col">
               <label for="adults">Взрослые:</label>
+              <div class="input-wrapper">
               <input id="adults" class="people-input" name="adults" type="text" value="2">
               <span class="icon-mp icon-minus mp-adults-minus"></span>
               <span class="icon-mp icon-plus mp-adults-plus"></span>
+              </div>
+            </div>
 
+            <div class="children-col">
               <label for="children" class="label-children">Дети:</label>
+              <div class="input-wrapper">
               <input id="children" class="people-input" name="children" type="text" value="0">
               <span class="icon-mp icon-minus mp-children-minus"></span>
               <span class="icon-mp icon-plus mp-children-plus"></span>
+                </div>
+            </div>
             </div>
             <button class="map-search" type="submit" name="map-search">найти</button>
           </div>
