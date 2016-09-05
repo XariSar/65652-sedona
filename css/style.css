@@ -523,6 +523,10 @@ form.hotel-search input {
 	border: 0;
 }
 
+input[type="text"]::-ms-clear {
+display: none;
+}
+
 .date-container {
 	position: relative;
 
