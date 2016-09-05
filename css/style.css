@@ -995,6 +995,7 @@ input[type="checkbox"]:checked + label::before {
 .forms-rate {
 	width: 310px;
 	float: right;
+	padding-right: 0;
 }
 
 .price-controls {
@@ -1267,7 +1268,7 @@ background-color: #fff;
 
 div.catalog-item {
 	box-sizing: border-box;
-	min-height: 152px;
+	min-height: 151px;
 	padding-bottom: 0px;
 	padding-top: 28px;
 	border-top: 1px solid #e5e5e5;
