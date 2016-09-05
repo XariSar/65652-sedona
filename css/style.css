@@ -99,7 +99,7 @@ h2 {
 
 .main-navigation {
 	box-sizing: border-box;
-	height: 56px;
+	min-height: 56px;
 	padding-top: 0px;
 }
 
@@ -128,6 +128,7 @@ h2 {
 
 .main-navigation li {
 	display: inline-block;
+	vertical-align: middle;
 
 	width: 24%;
 
@@ -265,7 +266,7 @@ h2 {
 
 .features-name {
 	display: inline-block;
-
+	vertical-align: top;
 	width: 151px;
 	margin-bottom: 7px;
 
@@ -299,7 +300,7 @@ h2 {
 }
 
 .features-row .features-present {
-	height: 255px;
+	min-height: 255px;
 }
 
 .features-present .road-description {
@@ -307,7 +308,7 @@ h2 {
 }
 
 .town, .canyon {
-	height: 256px;
+	min-height: 256px;
 	padding-top: 57px;
 
 	color: #ffffff;
@@ -431,7 +432,7 @@ h2 {
 
 .hotel {
 	position: relative;
-	height: 240px;
+	min-height: 240px;
 }
 
 .hotel  h2 {
@@ -446,7 +447,7 @@ h2 {
 }
 
 .hotel-description {
-
+	min-height: 50px;
 	color: #333333;
 
 	line-height: 24px;
@@ -526,10 +527,9 @@ form.hotel-search input {
 	position: relative;
 
 	display: inline-block;
+	vertical-align: middle;
 
 	width: 346px;
-
-	vertical-align: middle;
 }
 
 input.date {
@@ -638,8 +638,8 @@ form.hotel-search label {
 .input-wrapper {
 	position: relative;
 	display: inline-block;
-	width: 114px;
 	vertical-align: middle;
+	width: 114px;
 }
 
 .icon-mp {
@@ -741,6 +741,7 @@ footer {
 
 .hash-tag, .social, .developer {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .hash-tag {
@@ -760,6 +761,7 @@ footer {
 
 .hash-tag span {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .social {
@@ -774,6 +776,7 @@ footer {
 
 .social li {
 	display: inline-block;
+	vertical-align: middle;
 
 	width: 46px;
 	height: 35px;
@@ -787,6 +790,7 @@ footer {
 
 .social-btn {
 	display: inline-block;
+	vertical-align: middle;
 
 	width: 43px;
 	height: 45px;
@@ -844,6 +848,7 @@ footer {
 .developer-logo {
 	float: left;
 	display: inline-block;
+	vertical-align: middle;
 	height: 39px;
 	width: 60%;
 }
@@ -872,16 +877,18 @@ footer {
 /* inner.html */
 
 .forms {
-	height: 217px;
 	padding-left: 5%;
 
 	color: #fff;
 	background-image: url("../img/hotels/filter-background.jpg");
+	background-color: #4b76a0;
 	background-position: 0 -53px;
+	min-height: 200px;
 }
 
 .forms fieldset {
 	border: 0;
+	min-height: 200px;
 }
 
 .forms label {
@@ -939,7 +946,7 @@ input[type="checkbox"]:checked + label::before {
 	float: left;
 
 	width: 20%;
-	height: 200px;
+
 	margin-right: -12px;
 	margin-left: 0px;
 	padding-left: 0;
@@ -976,6 +983,7 @@ input[type="checkbox"]:checked + label::before {
 .form-infr label,
 .form-hous label {
 	display: inline-block;
+	vertical-align: middle;
 
 	line-height: 20px;
 }
@@ -1013,6 +1021,7 @@ input[type="checkbox"]:checked + label::before {
 
 .price-controls label {
 	display: inline-block;
+	vertical-align: top;
 
 	cursor: pointer;
 	vertical-align: middle;
@@ -1169,6 +1178,7 @@ background-color: #fff;
 
 .sorting-result, .sorting-finder, .type-title, .sorting-type, .sorting-type li, .arrows {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .type-title {
@@ -1251,12 +1261,16 @@ background-color: #fff;
 	margin: 0;
 }
 
-.catalog-item {
+div.catalog-item {
 	box-sizing: border-box;
-	padding-bottom: 16px;
-	padding-top: 33px;
-
+	min-height: 152px;
+	padding-bottom: 0px;
+	padding-top: 28px;
 	border-top: 1px solid #e5e5e5;
+}
+
+.catalog-item a {
+	min-height: 10px;
 }
 
 .item-photo {
@@ -1268,6 +1282,7 @@ background-color: #fff;
 }
 
 .hotel-photo {
+	margin-top: 5px;
 	width: 135px;
 	height: 90px;
 }
@@ -1277,14 +1292,16 @@ background-color: #fff;
 
 	box-sizing: border-box;
 	width: 40%;
-	height: 87px;
+	min-height: 87px;
+	font-size: 0;
 
 	outline: 0px solid red;
+	margin-top: 2px;
 }
 
 .item-last {
-	padding-bottom: 13px;
 	border-bottom: 2px solid #e5e5e5;
+	padding-bottom: 5px;
 }
 
 .item-title {
@@ -1309,10 +1326,25 @@ background-color: #fff;
 
 .item-type, .item-price {
 	display: inline-block;
+	vertical-align: middle;
 
 	margin-top: 7px;
+	font-size: 14px;
 
 	color: #333;
+	margin-left: 3px;
+}
+
+.item-price {
+	padding-left: 2px;
+}
+
+.item-type {
+	margin-left: 0;
+}
+
+.item-last .item-price {
+	padding-left: 4px;
 }
 
 a {
@@ -1401,8 +1433,6 @@ a.sort-type {
 	border-bottom: 0.5px dotted #81b3d2;
 }
 
-
-
 a.sort-type, a.sort-rate {
 	color: rgba(0, 0, 0, 0.3);
 }
@@ -1447,20 +1477,18 @@ a.sort-type, a.sort-rate, a.sort-active {
 	padding: 3px 17px;
 }
 
-.item-more {
+.item-more,
+.item-reserv {
 	text-align: center;
 
 	color: #fff;
 	background-color: #81b3d2;
+	font-size: 14px;
 
 	font-weight: bold;
 }
 
 .item-reserv {
-	text-align: center;
-
-	color: #fff;
+	margin-left: 5px;
 	background-color: #766357;
-
-	font-weight: bold;
 }
